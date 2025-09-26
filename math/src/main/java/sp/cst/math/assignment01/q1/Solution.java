@@ -1,4 +1,4 @@
-package sp.cst.regina.math.assignment01.q1;
+package sp.cst.math.assignment01.q1;
 
 public class Solution {
 
