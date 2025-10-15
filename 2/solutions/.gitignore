@@ -1,0 +1,73 @@
+# -------------------------------
+# Core Java build outputs
+# -------------------------------
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/**/build/
+
+# Java annotation processing
+*.apt_generated/
+.metadata/
+bin/
+gen/
+out/
+
+# Eclipse
+*.classpath
+*.project
+*.settings/
+.loadpath
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+.settings/
+.classpath
+.project
+
+# Logs
+*.log
+*.trace
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test reports / coverage
+test-output/
+surefire-reports/
+jacoco.exec
+coverage/
+*.lcov
+
+# Temporary or local config
+.env
+*.local
+*.bak
+*.swp
