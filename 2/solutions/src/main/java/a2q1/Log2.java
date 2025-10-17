@@ -1,4 +1,4 @@
-package group2.assign2.a2q1;
+package a2q1;
 
 public class Log2 extends A2Q1ACFunction{
 

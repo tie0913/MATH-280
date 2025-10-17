@@ -1,4 +1,4 @@
-package group2.assign2.a2q1;
+package a2q1;
 
 /**
  *  Class with main method for calculating integrals<br>

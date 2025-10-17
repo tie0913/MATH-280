@@ -1,4 +1,4 @@
-package group2.assign2.a2q3;
+package a2q3;
 
 /**
  *  Interface for function class to be used for integration<br>

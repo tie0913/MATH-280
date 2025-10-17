@@ -1,4 +1,4 @@
-package group2.assign2.a2q3;
+package a2q3;
 
 public class Q3B extends A2Q3ACFunction{
 

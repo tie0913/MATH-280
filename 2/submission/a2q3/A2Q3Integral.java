@@ -1,4 +1,4 @@
-package group2.assign2.a2q3;
+package a2q3;
 
 /**
  * The {@code A2Q3TestIntegral} class is a test driver for the

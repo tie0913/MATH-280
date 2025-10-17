@@ -1,5 +1,3 @@
-package group2.assign2.a2q1;
-
 /**
  *  Interface for function class to be used for integration<br>
  *  for Assignment #2, Question #1<br>
