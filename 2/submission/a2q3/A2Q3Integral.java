@@ -1,31 +1,11 @@
 package a2q3;
 
 /**
- * The {@code A2Q3TestIntegral} class is a test driver for the
- * {@link A2Q3Integral} class. It creates several example functions
- * and uses different integration methods to compare the results.
- *
- * <p>This program runs Rectangle, Trapezoid, and Simpson’s Rule
- * on the same functions and prints the result table for each one.
- * The output shows if the method converged, how many loops were used,
- * and what the final estimate was.</p>
- *
- * <p>It helps to check if the integration code works correctly
- * and how fast each method reaches the expected precision.</p>
- *
- * <p><b>Example Output:</b></p>
- * <pre>
- * Results for integral of example function from 0.0 to 8.0:
- * Method       Converged?  Loops   Result
- * ======       ==========  =====   ======
- * Rectangle    true        10      12.3456
- * Trapezoid    true         9      12.3457
- * Simpsons     true         5      12.3458
- * </pre>
- *
- * @author      Tie Wang
- * @version     1.0
- * @since       2025-10-14
+ * <p>This class performs numerical integration
+ * of a given function over a specified interval using three rules:
+ * the left rectangle rule, trapezoid rule, and Simpson’s rule.
+ * Each method refines the estimate until a desired relative precision
+ * or maximum number of iterations is reached.</p>
  */
 public class A2Q3Integral
 {

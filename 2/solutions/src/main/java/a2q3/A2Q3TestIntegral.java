@@ -1,36 +1,12 @@
 package a2q3;
 
 /**
- * The {@code A2Q3TestIntegral} class is a test harness for verifying
- * the numerical integration implementations (Rectangle, Trapezoid,
- * and Simpson’s Rule) used in the A2Q3 assignment.
- *
- * <p>This program creates several {@link A2Q3Integral} objects using
+ * <p>This program creates several A2Q3Integral objects using
  * different example functions (Q3A, Q3B, Q3C, Q3D) and integration
  * ranges. For each function, it executes the integration using
  * multiple numerical methods and prints the convergence status,
  * the number of refinement loops used, and the final estimated result.</p>
  *
- * <p>Usage:
- * <pre>
- *     java A2Q3TestIntegral
- * </pre>
- * The output will display a formatted table of results for each test case.
- * </p>
- *
- * <p><b>Example Output:</b></p>
- * <pre>
- * Results for integral of example function from 6.0 to 8.0:
- * Method      Converged?  Loops   Result
- * ======      ==========  =====   ======
- * Rectangle   true        10      12.3456
- * Trapezoid   true         9      12.3457
- * Simpsons    true         5      12.3458
- * </pre>
- *
- * @author      Tie Wang
- * @version     1.0
- * @since       2025-10-14
  */
 public class A2Q3TestIntegral
 {
@@ -41,12 +17,23 @@ public class A2Q3TestIntegral
         A2Q3Integral q3b = new A2Q3Integral(new Q3B(), 0, 8, 0.000001, 25, "Rectangdle");
         A2Q3Integral q3c = new A2Q3Integral(new Q3C(), 0, 2, 0.000001, 25, "Rectangdle");
 
+        System.out.println("Here is Q3 a");
         execute(q3a);
+        System.out.println();
+        System.out.println("Here is Q3 b");
         execute(q3b);
+        System.out.println();
+        System.out.println("Here is Q3 c");
         execute(q3c);
 
+        System.out.println();
+        System.out.println("Here is Q3 d function 1");
         execute(Q3D.getIntegral(Q3D.FIRST));
+        System.out.println();
+        System.out.println("Here is Q3 d function 2");
         execute(Q3D.getIntegral(Q3D.SECOND));
+        System.out.println();
+        System.out.println("Here is Q3 d function 3");
         execute(Q3D.getIntegral(Q3D.THIRD));
        
     }
