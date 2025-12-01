@@ -5,7 +5,7 @@
  *  Instructor:  Michael Grzesina
  */
 
-package math280.matrix;
+package note;
 
 /**
  * Concrete class for implementing matrices using a 2D array of values.

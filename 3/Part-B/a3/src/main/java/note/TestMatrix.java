@@ -5,7 +5,7 @@
  *  Instructor:  Michael Grzesina
  */
 
-package math280.matrix;
+package note;
 
 /**
  * Tests the implementation of the Matrix class and its methods

@@ -5,7 +5,7 @@
  *  Instructor:  Michael Grzesina
  */
 
-package math280.matrix;
+package note;
 
 /**
  * Abstract class for Matrix class<br>

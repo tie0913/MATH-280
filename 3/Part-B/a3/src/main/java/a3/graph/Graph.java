@@ -1,7 +1,7 @@
-package math280.a3;
+package a3.graph;
 
-import math280.matrix.IMatrix;
-import math280.matrix.Matrix;
+import note.IMatrix;
+import note.Matrix;
 
 public class Graph {
 
