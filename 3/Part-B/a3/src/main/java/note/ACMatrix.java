@@ -4,7 +4,6 @@
  *  Course name:  MATH 282
  *  Instructor:  Michael Grzesina
  */
-
 package note;
 
 /**

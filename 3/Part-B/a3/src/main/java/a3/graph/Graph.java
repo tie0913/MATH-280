@@ -19,7 +19,7 @@ public class Graph {
 
         IMatrix base = this.homogeneous();
 
-        base = this.translateMatrix(base, x, y);
+        base = this.translateMatrix(base, -x, -y);
 
         double radius = angle * Math.PI / 180;
         double[][] rotation = new double[3][3];
@@ -31,13 +31,13 @@ public class Graph {
 
         base = base.multiply(new Matrix(rotation));
 
-        this.set(this.translateMatrix(base, -x, -y));
+        this.set(this.translateMatrix(base, x, y));
     }
 
     public void scale(double tx, double ty, double sx, double sy){
         IMatrix base = this.homogeneous();
 
-        base = this.translateMatrix(base, tx, ty);
+        base = this.translateMatrix(base, -tx, -ty);
 
         double[][] scale = new double[3][3];
         scale[0][0] = sx;
@@ -46,10 +46,10 @@ public class Graph {
 
         base = base.multiply(new Matrix(scale));
 
-        this.set(this.translateMatrix(base, -tx, -ty));
+        this.set(this.translateMatrix(base, tx, ty));
     }
 
-    public void tanslate(double tx, double ty){
+    public void translate(double tx, double ty){
         this.set(this.translateMatrix(this.homogeneous(), tx, ty));
     }
 
@@ -91,8 +91,8 @@ public class Graph {
     private IMatrix homogeneous(){
         double[][] vals = new double[this.image.getRows()][this.image.getCols() + 1];
         for(int r = 1; r <= vals.length; r++){
-            for(int c = 1; c <= vals[r].length; c++){
-                vals[r][c] = c < vals[r].length ? this.image.getElement(r, c) : 1;
+            for(int c = 1; c <= vals[r - 1].length; c++){
+                vals[r - 1][c - 1] = c < vals[r - 1].length ? this.image.getElement(r, c) : 1;
             }
         }
         return new Matrix(vals);

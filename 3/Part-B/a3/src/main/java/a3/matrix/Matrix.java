@@ -6,9 +6,14 @@ public class Matrix {
 
     private IMatrix augmentedMatrix;
 
+    public Matrix(IMatrix augmentedMatrix){
+        this.augmentedMatrix = augmentedMatrix;
+    }
+
 
     public String toPolynomialString(){
 
+        boolean empty = true;
         StringBuilder builder = new StringBuilder("y = ");
         for(int i = 1; i <= augmentedMatrix.getRows(); i++){
 
@@ -18,12 +23,17 @@ public class Matrix {
                 continue;
             }
 
-            if(v > 0){
+            if(v > 0 && i != 1){
                 builder.append("+");
             }
 
             builder.append(v).append( i == 1? "" : (i == 2? "x" : "x^" + (i - 1)));
+            empty = false;
 
+        }
+
+        if(empty){
+            builder.append("0");
         }
         return builder.toString();
     }
